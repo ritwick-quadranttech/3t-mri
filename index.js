@@ -21,9 +21,9 @@ const swiper = new Swiper('.specialty-content-images', {
         clickable: true,
         dynamicBullets: true
     },
-    // autoplay: {
-    //     delay: 2000,
-    //   },
+    autoplay: {
+        delay: 3000,
+      },
     // Navigation arrows
     navigation: {
         nextEl: '.swiperbuttonnext1',
@@ -34,7 +34,10 @@ const swiper = new Swiper('.specialty-content-images', {
             slidesPerView: 1
         },
         768: {
-            slidesPerView: 1.5
+            slidesPerView: 1
+        },
+        980: {
+            slidesPerView: 1.3
         },
         1200: {
             slidesPerView: 2.5
@@ -56,7 +59,7 @@ const review = new Swiper('.reviewes', {
         dynamicBullets: true
     },
     autoplay: {
-        delay: 2000,
+        delay: 3000,
     },
     // Navigation arrows
     navigation: {
@@ -82,10 +85,14 @@ const review = new Swiper('.reviewes', {
 let faqs = document.querySelectorAll(".faq");
 faqs.forEach((faq) => {
     faq.addEventListener("click", () => {
-        faqs.forEach(item => {
-            item.classList.remove("active")
-        })
-        faq.classList.toggle("active");
+        if (faq.classList.contains('active')) {
+            faq.classList.remove("active")
+
+        } else {
+
+            faq.classList.toggle("active");
+
+        }
     })
 })
 
