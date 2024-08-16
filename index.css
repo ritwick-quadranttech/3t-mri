@@ -501,7 +501,7 @@ header {
 
 .specialty-content-img {
     display: flex;
-    background-image: url('./images/service12.jpg');
+    /* background-image: url('./images/service12.jpg'); */
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
