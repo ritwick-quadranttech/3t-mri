@@ -48,8 +48,11 @@ const swiper = new Swiper('.specialty-content-images', {
         980: {
             slidesPerView: 1.3
         },
+        1024: {
+            slidesPerView: 1.4
+        },
         1200: {
-            slidesPerView: 2.5
+            slidesPerView: 2.2
         },
     }
 

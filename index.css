@@ -489,7 +489,7 @@ header {
 }
 
 .specialty-content-images.swiper {
-    padding-bottom: 4rem;
+    padding-bottom: 39rem;
     flex: 2;
 }
 
@@ -499,7 +499,21 @@ header {
     bottom: 2rem !important;
 
 }
+.swiperbuttonprev1 svg {
+transform: rotate(3.1196rad);
+}
+.swiperbuttonprev1:hover{
+    .svg-path{
 
+        stroke: #fff;
+    }
+}
+.swiperbuttonnext1:hover{
+    .svg-path{
+
+        stroke: #fff;
+    }
+}
 .swiperbuttonprev1:hover {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -956,7 +970,7 @@ step----------------- */
 
 .reviewes {
     background: var(--Color-Background-BG-Black, #3F3F46);
-    height: 463px;
+    height: auto;
 }
 
 .reviewes-inner {
@@ -1045,12 +1059,18 @@ step----------------- */
 
 .mri-img {
     height: 600px;
-    background-image: url('./images/feature-img.png');
+    position: relative;
+    /* background-image: url('./images/feature-img.png');
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative; */
 
+}
+.mri-img img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(77%);
 }
 
 .mri-img-text {
@@ -1938,7 +1958,7 @@ responsive-------- */
     }
 
     .mri-img {
-        height: 284px;
+        height: 338px;
     }
 
     .appointment-inner {
@@ -2157,7 +2177,7 @@ responsive-------- */
     }
 
     .mri-img {
-        height: 236px;
+        height: 275px;
     }
 
     .mri-img-text p {
@@ -2227,7 +2247,7 @@ responsive-------- */
         height: auto;
     }
     .mri-img {
-        height: 170px;
+        height: 230px;
     }
 
     .mri-img-text p {
@@ -2507,7 +2527,7 @@ width: 22px;
     }
 
     .mri-img {
-        height: 107px;
+        height: 180px;
     }
 
     .about-img {
