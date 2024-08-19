@@ -2387,6 +2387,15 @@ responsive-------- */
         width: 100%;
         height: auto;
     }
+    .logo-icon{
+        width: 160px;
+    }
+    .contactno {
+        padding: 0.3rem 0.5rem;
+    }
+    .contactno img{
+width: 22px;
+    }
 }
 
 @media (max-width: 375px) {

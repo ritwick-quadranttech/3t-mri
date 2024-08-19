@@ -21,9 +21,9 @@ const swiper = new Swiper('.specialty-content-images', {
         clickable: true,
         dynamicBullets: true
     },
-    // autoplay: {
-    //     delay: 3000,
-    //   },
+    autoplay: {
+        delay: 3000,
+      },
     // Navigation arrows
     navigation: {
         nextEl: '.swiperbuttonnext1',
@@ -67,9 +67,9 @@ const review = new Swiper('.reviewes', {
         clickable: true,
         dynamicBullets: true
     },
-    // autoplay: {
-    //     delay: 3000,
-    // },
+    autoplay: {
+        delay: 3000,
+    },
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-buttonnext',
