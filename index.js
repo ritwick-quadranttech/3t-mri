@@ -21,9 +21,9 @@ const swiper = new Swiper('.specialty-content-images', {
         clickable: true,
         dynamicBullets: true
     },
-    autoplay: {
-        delay: 3000,
-      },
+    // autoplay: {
+    //     delay: 3000,
+    //   },
     // Navigation arrows
     navigation: {
         nextEl: '.swiperbuttonnext1',
@@ -33,8 +33,17 @@ const swiper = new Swiper('.specialty-content-images', {
         0: {
             slidesPerView: 1
         },
+        480: {
+            slidesPerView: 1.1
+        },
+        640: {
+            slidesPerView: 1.4
+        },
         768: {
-            slidesPerView: 1
+            slidesPerView: 1.6
+        },
+        767: {
+            slidesPerView: 1.6
         },
         980: {
             slidesPerView: 1.3
@@ -58,9 +67,9 @@ const review = new Swiper('.reviewes', {
         clickable: true,
         dynamicBullets: true
     },
-    autoplay: {
-        delay: 3000,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    // },
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-buttonnext',
@@ -84,58 +93,69 @@ const review = new Swiper('.reviewes', {
 // start qustion-banner
 let faqs = document.querySelectorAll(".faq");
 faqs.forEach((faq) => {
+    console.warn(faq);
+
     faq.addEventListener("click", () => {
+
         if (faq.classList.contains('active')) {
             faq.classList.remove("active")
-
         } else {
+            // faq.addEventListener("click",()=>{
+            //     console.warn("condition");
 
+            //     faqs.forEach(item=>{
+            //         item.classList.remove('active')
+            //     })
+            // })
             faq.classList.toggle("active");
 
         }
     })
 })
 
+
 // -------------------counter section-----------
-// Function to handle the intersection change
-function handleIntersection(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            counter(entry.target)
+
+document.addEventListener("DOMContentLoaded", function() {
+    const targetValue = 173000;
+    const counterElement = document.querySelector('.count');
+    let count = 0;
+    let isCounting = false;
+    let intervalId;
+
+    function startCounting() {
+        if (isCounting) return; // Prevent multiple intervals
+        isCounting = true;
+
+        const duration = 5000; // Duration in milliseconds to reach the target value
+        const incrementTime = 50; // Time between increments in milliseconds
+        const increments = duration / incrementTime;
+        const incrementValue = targetValue / increments;
+
+        intervalId = setInterval(() => {
+            count += incrementValue;
+            if (count >= targetValue) {
+                count = targetValue;
+                clearInterval(intervalId);
+                counterElement.textContent = count.toLocaleString();
+            } else {
+                counterElement.textContent = Math.floor(count).toLocaleString();
+            }
+        }, incrementTime);
+    }
+
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const triggerPoint = document.querySelector('.counting').offsetTop;
+
+        if (scrollPosition > triggerPoint) {
+            startCounting();
         }
     });
-}
-
-// Create an IntersectionObserver instance
-const countOberver = new IntersectionObserver(handleIntersection, {
-    root: null, // Use the viewport as the container
-    rootMargin: '0px', // Margin around the root
-    threshold: 0.1 // Trigger callback when 10% of the element is visible
 });
 
 
-const myNum = document.querySelectorAll('.count');
-let speed = 10;
-
-myNum.forEach((myCount) => {
-    countOberver.observe(myCount);
-})
-
-const counter = (myCount) => {
-    let target_count = Number(myCount.dataset.count)
-    let init_count = target_count - 100;
-    const updateNumber = () => {
-        init_count = init_count + 1
-        myCount.innerText = init_count;
-
-        if (init_count < target_count) {
-            setTimeout(() => { updateNumber() }, speed)
-        }
-    }
-
-    updateNumber();
-}
-// backto top button
+// ------------backto top button------
 function scrolToTop() {
     window.scrollTo({
         top: 0,
@@ -143,7 +163,7 @@ function scrolToTop() {
     })
 }
 
-// ------------loder tranform
+// ------------loder tranform------------
 const sections = document.querySelectorAll(".animated");
 const observer_opacity = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

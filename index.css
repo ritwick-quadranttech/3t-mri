@@ -197,8 +197,8 @@ header {
     letter-spacing: 0.48px;
 }
 
-
 /* end header */
+
 /* start banner */
 .banner {
     width: 100%;
@@ -207,8 +207,6 @@ header {
     flex-direction: column;
     gap: 80px;
     margin-top: 146px;
-    /* overflow: hidden; */
-    /* border: var(--border); */
 }
 
 .banner::before {
@@ -334,6 +332,22 @@ header {
 
 .counting {
     max-width: 1241px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.counting span {
+    color: var(--Color-Text-Text-black, #3F3F46);
+    /* usg/<h2> */
+    font-family: "Plus Jakarta Sans";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    /* 84px */
+    letter-spacing: 0.6px;
+    display: flex;
+    right: 10px;
 }
 
 .counting h2 {
@@ -341,6 +355,7 @@ header {
     font-family: "Plus Jakarta Sans";
     font-size: 19.613rem;
     font-weight: 300;
+    max-width: 1200px;
 }
 
 .complete-scean {
@@ -357,15 +372,12 @@ header {
     font-weight: 600;
     line-height: 130%;
     letter-spacing: 0.72px;
-    bottom: 0;
-    /* margin: 288px 0px 34px 50px; */
 }
 
 .strok {
     width: 100%;
     border-bottom: 1px solid #A3A3A3;
     /* border: var(--border); */
-
     margin: 80px 0px 80px 0px;
 
 }
@@ -401,8 +413,9 @@ header {
     padding-left: 20px;
 
 
-   
+
 }
+
 .specialty-content a {
     text-decoration: none;
     background-color: var(--Color-Button-Button-yellow);
@@ -412,7 +425,7 @@ header {
     display: flex;
     align-items: center;
 
-} 
+}
 
 .specialty-content-text {
     display: flex;
@@ -557,9 +570,9 @@ header {
     width: 13px;
     height: 13px;
 }
-.arrow{
-    /* background-color: #3c79ff; */
-    border:var(--border-2px);
+
+.arrow {
+    border: var(--border-2px);
     width: 45px;
     height: 45px;
     display: flex;
@@ -569,15 +582,16 @@ header {
     color: #A3A3A3;
 
 }
-.arrow span{
 
-}
-.arrow:hover{
+.arrow span {}
+
+.arrow:hover {
     background-color: #3c79ff;
     color: #fff;
-font-weight: 500;
-border: var(--border-white);
+    font-weight: 500;
+    border: var(--border-white);
 }
+
 /* ----------------about section
 ---------------- */
 .about {
@@ -597,11 +611,6 @@ border: var(--border-white);
 .about-img {
     width: 54%;
     height: 590px;
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
 }
 
 .about-img img {
@@ -640,7 +649,6 @@ border: var(--border-white);
     font-style: normal;
     font-weight: 600;
     line-height: 130%;
-    /* 31.2px */
     letter-spacing: 0.72px;
 }
 
@@ -650,16 +658,12 @@ border: var(--border-white);
 
 .about-text-2 h2 {
     font-size: var(--h2);
-
     color: var(--Color-Text-Text-black, #3F3F46);
-
-    /* usg/<h2> */
     font-family: "Plus Jakarta Sans";
-
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-    /* 84px */
+
     letter-spacing: 0.6px;
 }
 
@@ -675,9 +679,7 @@ border: var(--border-white);
     font-style: normal;
     font-weight: 400;
     line-height: 180%;
-    /* 28.8px */
     letter-spacing: 0.16px;
-
 }
 
 .about-text-4 {
@@ -688,12 +690,10 @@ border: var(--border-white);
 .about-text-4 p {
     font-size: 1rem;
     color: var(--Color-Text-Text-black, #3F3F46);
-    /* usg/<p> */
     font-family: "Work Sans";
     font-style: normal;
     font-weight: 400;
     line-height: 180%;
-    /* 28.8px */
     letter-spacing: 0.16px;
 
 }
@@ -726,13 +726,13 @@ border: var(--border-white);
 
 }
 
-appointment-img-inner {
+.appointment-img-inner {
     width: 100%;
     height: 425px;
 
 }
 
-appointment-img-inner img {
+.appointment-img-inner img {
     width: 100%;
 
 
@@ -789,6 +789,8 @@ appointment-img-inner img {
     gap: 80px;
 }
 
+/* -------------------
+step----------------- */
 .stepes {
     max-height: 115px;
     display: flex;
@@ -800,14 +802,11 @@ appointment-img-inner img {
     content: "------------";
     position: absolute;
     transform: rotate(1.5708rad);
-    bottom: -46px;
-    left: 7px;
+    bottom: -52px;
+    left: 6px;
     color: #8ba0e9;
 }
 
-/* .step-no {
-
-} */
 .step-no p {
     font-family: "Plus Jakarta Sans";
     font-size: 32px;
@@ -819,8 +818,8 @@ appointment-img-inner img {
 }
 
 .step1 {
-    /* padding: 29px 33px 36px 35px; */
     width: 109px;
+    height: 109px;
     border-radius: 125px;
     background: var(--Light-blue, #E0E7FF);
     margin-bottom: 13px;
@@ -830,8 +829,8 @@ appointment-img-inner img {
 }
 
 .step2 {
-    /* padding: 28px 32px 36px 32px; */
     width: 108px;
+    height: 108px;
     border-radius: 79px;
     background: var(--Light-blue, #E0E7FF);
     margin-bottom: 13px;
@@ -841,9 +840,8 @@ appointment-img-inner img {
 }
 
 .step3 {
-
-    /* padding: 27px 27px 29px 30px; */
     width: 107px;
+    height: 107px;
     border-radius: 125px;
     background: var(--Light-blue, #E0E7FF);
     margin-bottom: 13px;
@@ -866,7 +864,6 @@ appointment-img-inner img {
     font-style: normal;
     font-weight: 600;
     line-height: 130%;
-    /* 41.6px */
     letter-spacing: 0.32px;
 }
 
@@ -877,22 +874,18 @@ appointment-img-inner img {
     font-style: normal;
     font-weight: 400;
     line-height: 180%;
-    /* 28.8px */
 }
-
 
 .scan {
     position: relative;
     left: 0;
     bottom: 0;
-
     margin-top: 80px;
     gap: 10px;
 }
 
 .btn-primary:hover {
     background: #3c79ff;
-
 }
 
 .btn .scan-text {
@@ -932,7 +925,6 @@ appointment-img-inner img {
 
 .review-info-text1 {
     max-width: 628px;
-
     color: var(--Color-Button-Button-black, #3F3F46);
     font-family: Inter;
     font-size: 4rem;
@@ -964,11 +956,20 @@ appointment-img-inner img {
 
 .reviewes {
     background: var(--Color-Background-BG-Black, #3F3F46);
+    height: 463px;
 }
 
 .reviewes-inner {
+    display: inline-flex;
+
     padding: 60px;
     gap: 15px;
+}
+
+.reviewes-img,
+.reviewes-details,
+.reviewes-name {
+    margin-bottom: 10px;
 }
 
 .reviewes-img {
@@ -1154,12 +1155,17 @@ appointment-img-inner img {
     flex-direction: column;
 }
 
-.mri-steps-title-inner .steps1 .mri-step .logo img {
+.logo {
+    width: 60px;
+    display: flex;
+    padding: 18px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     border-radius: 120px;
     background: var(--Light-blue, #E0E7FF);
-    padding: 18px;
-    gap: 10px;
 }
+
 
 .mri-steps-title-inner .steps1 .mri-step .logo-text {
     gap: 16px;
@@ -1291,7 +1297,7 @@ appointment-img-inner img {
 
 }
 
-.minus-icon{
+.minus-icon {
     width: 42px;
     height: 42px;
     position: relative;
@@ -1303,7 +1309,7 @@ appointment-img-inner img {
     padding: 8px;
 }
 
-.minus-icon span{
+.minus-icon span {
     display: block;
     width: 24px;
     height: 2px;
@@ -1311,7 +1317,7 @@ appointment-img-inner img {
     transition: .5s ease;
 }
 
-.minus-icon span:nth-child(2){
+.minus-icon span:nth-child(2) {
     transform: rotate(90deg);
     transform-origin: center;
     position: absolute;
@@ -1319,17 +1325,17 @@ appointment-img-inner img {
     top: auto;
 }
 
-.faq.active .minus-icon span:nth-child(2){
+.faq.active .minus-icon span:nth-child(2) {
     transform: rotate(0deg);
 }
 
-.faq.active .qus-box .svg .nagetive{
+.faq.active .qus-box .svg .nagetive {
     transform-origin: center;
     transition: .5s ease !important;
 }
 
 .faq.active .qus-box .svg .nagetive {
-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 @keyframes fade {
@@ -1539,26 +1545,60 @@ footer {
 /* --------
 responsive-------- */
 @media (max-width:1440px) {
-    .counting h2 {
-        font-size: 16.6rem;
+    .counting {
+        width: 1023px;
     }
+
+    .counting h2 {
+        font-size: 15.6rem;
+    }
+
     .banner-img {
         height: 644px;
     }
+
     .step-instraction {
         max-width: 425px;
     }
 }
 
-@media (max-width:1366px) {
+@media only screen and (max-width:1366px) {
     .counting h2 {
-        font-size: 16.513rem;
+        font-size: 15.513rem;
     }
-    
+
+    .appointment {
+        margin-top: 80px;
+    }
+
+    .review-section {
+        width: 100%;
+        height: auto;
+        margin: 80px 0px 80px 0px;
+    }
+
+    .qustions {
+        padding: 80px 0px 80px 0px;
+    }
+
+    .qus-box-text p {
+        font-size: 1.7rem
+    }
+
+    ;
 }
+
 @media (max-width:1284px) {
-    .qus-box-text p{
+    .qus-box-text p {
         font-size: 1.8rem;
+    }
+
+    .counting h2 {
+        font-size: 15.513rem;
+    }
+
+    .mri-img {
+        height: 485px;
     }
 }
 
@@ -1579,6 +1619,18 @@ responsive-------- */
 
     .banner-details-text1 h2 {
         line-height: 69px;
+    }
+
+    .counting {
+        width: 720px;
+    }
+
+    .counting h2 {
+        font-size: 10rem;
+    }
+
+    .counting span {
+        font-size: 3rem;
     }
 
     .report-no {
@@ -1606,23 +1658,25 @@ responsive-------- */
         font-size: 2.75rem;
     }
 
-    .counting h2 {
-        font-size: 12.4rem;
-    }
+
 
     .btn-primary {
         padding: 13px 26px;
     }
-    
-    .appointment-inner{
-        gap: 0;justify-content: space-between;
+
+    .appointment-inner {
+        gap: 0;
+        justify-content: space-between;
     }
-    .appointment-img{
+
+    .appointment-img {
         width: 46%;
     }
+
     .step-instraction {
         max-width: 315px;
     }
+
     .specialty-content {
         gap: 3rem;
     }
@@ -1632,9 +1686,12 @@ responsive-------- */
         width: 23px;
         height: 23px;
     }
+    .reviewes {
 
+        height: auto;
+    }
     .reviewes-inner p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .step-instraction-text1 {
@@ -1705,9 +1762,7 @@ responsive-------- */
 
 @media (max-width:998px) {
 
-    /* html {
-        font-size: 55%;
-    } */
+
     .banner-details {
         flex-direction: column;
         gap: 3.25rem;
@@ -1716,24 +1771,44 @@ responsive-------- */
     .banner-details-text2 {
         max-width: 600px;
     }
+
+    /* .complete-scean p {
+        font-size: 2rem;
+    } */
+
     .report-no {
         gap: 14px;
     }
+
+    .counting {
+        width: 525px;
+    }
+
     .counting h2 {
 
-        font-size: 9.513rem;
+        font-size: 7.8rem;
     }
 
     .complete-scean p {
         font-size: 1.1rem;
     }
-    .specialty-content-images.swiper {
 
+    .specialty-content-images.swiper {
+        padding-bottom: 37rem;
         flex: 1.4;
     }
-    .specialty-content-images .swiper-pagination{
+    .container {
+
+        margin-top: 20px;
+    }
+    .specialty-content-images .swiper-pagination {
         bottom: 0 !important;
     }
+
+    .mri-img {
+        height: 289px;
+    }
+
     .about-inner,
     .appointment-inner,
     .mri-img-content,
@@ -1741,9 +1816,11 @@ responsive-------- */
         flex-direction: column;
         align-items: center;
     }
-    .appointment-inner{
-gap: 23px;
+
+    .appointment-inner {
+        gap: 23px;
     }
+
     .about-img,
     .appointment-img,
     .about-text,
@@ -1752,13 +1829,16 @@ gap: 23px;
     .qustion-banner-qus {
         width: 90%;
     }
-    .appointment-setps-inner{
+
+    .appointment-setps-inner {
         justify-content: center;
         align-items: center;
     }
-    .appointment-setps{
+
+    .appointment-setps {
         align-items: center;
     }
+
     .mri-img-inner .mri-img-content .mri-content-title {
         width: 90%;
     }
@@ -1780,7 +1860,9 @@ gap: 23px;
     }
 
     .footer-options .our-contact {
-        gap: 16px;
+        gap: 20px;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .contact-number {
@@ -1803,7 +1885,7 @@ gap: 23px;
 
     .swiper {
         width: 95%;
-        height: 570px;
+        height: 477px;
     }
 
     .review-section-inner {
@@ -1820,6 +1902,7 @@ gap: 23px;
 
         align-items: center;
     }
+
 }
 
 
@@ -1828,17 +1911,38 @@ gap: 23px;
     /* html {
         font-size: 45%;
     } */
+    header {
+        padding: 1.25rem 1.063rem;
+    }
+
     .banner-img {
         width: 100%;
         height: 340px;
+    }
+
+    .banner-details-text1 {
+        max-width: 700px;
+    }
+
+    .specialty-content {
+        gap: 2rem;
     }
 
     .qus-box-text {
         font-size: 1.5rem;
     }
 
+    .specialty-content-text {
+        gap: 18px;
+        max-width: 680px;
+    }
+
     .mri-img {
         height: 284px;
+    }
+
+    .appointment-inner {
+        gap: 40px;
     }
 
     .footer-desctiption .footer-desctiption-text {
@@ -1847,10 +1951,6 @@ gap: 23px;
 
     .location-name {
         font-size: 0.875rem;
-    }
-
-    header {
-        padding: 1.25rem 1.063rem;
     }
 
     .contactno {
@@ -1864,11 +1964,25 @@ gap: 23px;
     .our-contact {
         flex-direction: column;
     }
-    .specialty-content-images .swiper-pagination{
+
+    .specialty-inner {
+        flex-direction: column;
+    }
+
+    .specialty-content-images .swiper-pagination {
         bottom: 0 !important;
     }
+
     .counting h2 {
-        font-size: 9rem;
+        font-size: 7.6rem;
+    }
+
+    .counting span {
+        font-size: 3.3rem;
+    }
+
+    .reviewes-inner {
+        padding: 50px;
     }
 
     .banner-details-text2 p {
@@ -1879,10 +1993,22 @@ gap: 23px;
         --h2: 3rem;
     }
 
+    .specialty-content-images.swiper {
+        padding-bottom: 8rem;
+    }
+
     .step-no {
         width: 106px;
+        height: 106px;
+    }
 
-        padding: 27px 38px 38px 30px;
+    .stepes1::before {
+        content: "------------";
+        position: absolute;
+        transform: rotate(1.5708rad);
+        bottom: -50px;
+        left: 5px;
+        color: #8ba0e9;
     }
 
     .qustion-banner .qustion-banner-img {
@@ -1906,7 +2032,7 @@ gap: 23px;
 
     .swiper {
         width: 95%;
-        height: 495px;
+        height: 400px;
     }
 
     .appointment-setps {
@@ -1956,12 +2082,30 @@ gap: 23px;
 }
 
 @media (max-width: 640px) {
+    .banner-img {
+        width: 100%;
+        height: 282px;
+    }
+
+    .specialty-content-text {
+        gap: 16px;
+        max-width: 600px;
+    }
+
+    .specialty-content-images.swiper {
+        padding-bottom: 7rem;
+    }
+
+    .appointment-setps {
+        gap: 58px;
+    }
+
     .location {
         display: none;
     }
 
     .logo {
-        width: 148px;
+        width: 60px;
     }
 
     .stepes1::before {
@@ -1979,7 +2123,7 @@ gap: 23px;
     }
 
     .appointment-setps-inner {
-        gap: 14px;
+        gap: 24px;
     }
 
     .banner-details {
@@ -1995,7 +2139,13 @@ gap: 23px;
     }
 
     .counting h2 {
-        font-size: 7rem;
+        font-size: 7.7rem;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+    .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+        left: 45% !important;
+        transform: translateX(-50%) !important;
     }
 
     .strok {
@@ -2006,6 +2156,15 @@ gap: 23px;
         margin: 35px 0px 35px 0px;
     }
 
+    .mri-img {
+        height: 236px;
+    }
+
+    .mri-img-text p {
+        font-size: 1.2rem;
+        max-width: 318px;
+    }
+
     .mri-img-inner .mri-img-content {
         gap: 45px;
     }
@@ -2014,6 +2173,14 @@ gap: 23px;
         padding: 35px 0px 35px 0px;
     }
 
+    .qustion-banner .qustion-banner-img {
+        width: 100%;
+        height: 365px;
+    }
+
+    .qus-box-text p {
+        max-width: 430px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2023,12 +2190,60 @@ gap: 23px;
         align-items: flex-start;
         gap: 30px;
     }
-    .specialty-inner{
+    :root {
+        --h2: 2.7rem;
+    }
+    .counting {
+        width: 100%;
+    }
+
+    .counting h2 {
+        font-size: 6.6rem;
+    }
+
+    .counting span {
+        font-size: 2.5rem;
+    }
+    .complete-scean p {
+        font-size: 1.7rem;
+    }
+    .specialty-inner {
         flex-direction: column;
     }
+
+    .footer-inner .footer-logos .company-logo {
+        width: 184px;
+    }
+
+    .footer-options .our-contact {
+        align-items: flex-start;
+    }
+
+    .reviewes-inner p {
+        font-size: 1rem;
+    }
+    .appointment-img-inner {
+
+        height: auto;
+    }
+    .mri-img {
+        height: 170px;
+    }
+
+    .mri-img-text p {
+        font-size: 1.1rem;
+        max-width: 295px;
+    }
+    .qus-box-text p {
+        font-size: 1.3rem;
+    }
+    .qustion-banner .qustion-banner-img {
+        height: 276px;
+    }
+
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     :root {
         --h2: 2rem;
     }
@@ -2043,6 +2258,10 @@ gap: 23px;
 
     .banner {
         gap: 46px;
+    }
+
+    .counting h2 {
+        font-size: 5.7rem;
     }
 
     .review-scroll1 {
@@ -2063,10 +2282,6 @@ gap: 23px;
 
     .appointment {
         margin-top: 65px;
-    }
-
-    .counting h2 {
-        font-size: 6rem;
     }
 
     .complete-scean p {
@@ -2090,7 +2305,7 @@ gap: 23px;
     }
 
     .swiper {
-        height: 468px;
+        height: 410px;
     }
 
     .review-scroll {
@@ -2168,6 +2383,10 @@ gap: 23px;
         bottom: 18px;
     }
 
+    .appointment-img-inner {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2179,10 +2398,16 @@ gap: 23px;
         line-height: 33px;
     }
 
+    .counting h2 {
+        font-size: 4.7rem;
+    }
+
     .report-no {
         gap: 16px;
     }
-
+    .specialty-content-images.swiper {
+        padding-bottom: 9rem;
+    }
     .strok {
         margin: 30px 0px 30px 0px;
     }
@@ -2201,9 +2426,12 @@ gap: 23px;
     }
 
     .logo {
-        width: 140px;
+        width: 61px;
     }
-
+    .minus-icon {
+        width: 36px;
+        height: 36px;
+    }
     .information-inner {
         padding: 0;
     }
@@ -2214,6 +2442,10 @@ gap: 23px;
 
     .counting h2 {
         font-size: 5rem;
+    }
+
+    .counting span {
+        font-size: 3rem;
     }
 
     .complete-scean p {
@@ -2263,5 +2495,15 @@ gap: 23px;
 
     .about-img {
         max-height: 194px;
+    }
+}
+
+@media (max-width:320px) {
+    .counting h2 {
+        font-size: 4.2rem;
+    }
+
+    .counting span {
+        font-size: 2rem;
     }
 }
