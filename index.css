@@ -2261,7 +2261,7 @@ responsive-------- */
     }
 
     .counting h2 {
-        font-size: 5.7rem;
+        font-size: 5.6rem;
     }
 
     .review-scroll1 {
@@ -2326,7 +2326,8 @@ responsive-------- */
     }
 
     .mri-img {
-        height: 150px;
+        height: 250px;
+        background-position: center;
     }
 
     .qustion-banner-title {
@@ -2338,7 +2339,7 @@ responsive-------- */
     }
 
     .qus-box-text p {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .qus-box-text svg {
@@ -2380,7 +2381,14 @@ responsive-------- */
     }
 
     .mri-img-text {
-        bottom: 18px;
+      
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+            top: 0;
+    
     }
 
     .appointment-img-inner {
